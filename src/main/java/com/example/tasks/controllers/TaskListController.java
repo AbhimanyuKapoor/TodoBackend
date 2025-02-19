@@ -48,11 +48,7 @@ public class TaskListController {
             @RequestBody TaskListDto taskListDto
     ) {
 
-        TaskList updatedTaskList = taskListService.updateTaskList(
-                taskListId,
-                taskListMapper.fromDto(taskListDto)
-        );
-
+        TaskList updatedTaskList = taskListService.updateTaskList(taskListId, taskListMapper.fromDto(taskListDto));
         return taskListMapper.toDto(updatedTaskList);
     }
 
