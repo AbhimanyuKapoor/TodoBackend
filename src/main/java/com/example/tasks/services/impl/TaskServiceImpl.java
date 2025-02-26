@@ -112,6 +112,4 @@ public class TaskServiceImpl implements TaskService {
 
         taskRepository.deleteByTaskListIdAndId(taskListId, taskId);
     }
-
-
 }
